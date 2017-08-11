@@ -1,0 +1,16 @@
+@import 'base';
+
+header.site-header {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+  width: 100%;
+}
+
+.main-column {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.entry-content {
+  font-family: $content-font;
+  font-size: 1.3em;
+}
