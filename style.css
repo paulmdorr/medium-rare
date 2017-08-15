@@ -693,7 +693,12 @@ a:hover {
 .main-column {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 1em 0; }
+  padding: 0 1rem; }
+
+.inner-column, article .entry-content p, article .entry-footer {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 1rem; }
 
 .site-title a, .entry-title, .entry-title a, .widget-title {
   color: #404040;
@@ -702,17 +707,17 @@ a:hover {
 
 .site-header {
   box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1em;
+  margin-bottom: 2rem;
   padding: 0.7em 0;
   width: 100%; }
   .site-header .site-title a {
-    font-size: 1.7em; }
+    font-size: 1.7rem; }
   .site-header .site-description {
     color: #404040;
-    font-size: 0.8em; }
+    font-size: 0.8rem; }
 
 .main-navigation .menu {
-  margin-top: 1em; }
+  margin-top: 1rem; }
   .main-navigation .menu ul {
     list-style: none;
     overflow: hidden; }
@@ -720,25 +725,28 @@ a:hover {
       float: left;
       padding-right: 20px; }
       .main-navigation .menu ul li a {
-        font-size: 0.8em;
+        font-size: 0.8rem;
         font-weight: 500;
         text-transform: uppercase; }
 
 article {
-  margin-bottom: 4em; }
-  article .entry-header.with-thumbnail {
-    clear: none;
-    float: left;
-    padding-left: 10px; }
-  article .entry-meta, article .entry-footer {
-    font-size: 0.7em;
+  margin-bottom: 4rem; }
+  article .entry-header {
     margin-bottom: 1rem; }
+    article .entry-header div.with-thumbnail {
+      clear: none;
+      float: left;
+      padding-left: 10px; }
+  article .entry-meta {
+    font-size: 0.7rem; }
   article .entry-content {
     clear: both; }
     article .entry-content p {
       font-family: "Fjord One", sans-serif;
-      font-size: 1.3em;
+      font-size: 1.3rem;
       margin-bottom: 2rem; }
+  article .entry-footer {
+    font-size: 0.7rem; }
 
 .widget ul {
   list-style: none; }
@@ -747,7 +755,7 @@ article {
   text-align: center; }
   .more-link-p a {
     font-family: Montserrat, sans-serif;
-    font-size: 0.9em; }
+    font-size: 1.2rem; }
 
 .tags-links, .cat-links {
   color: #8f8f8f;
@@ -763,15 +771,9 @@ article {
 
 .featured-image {
   overflow: visible;
-  height: 1080px;
-  margin-bottom: 2em; }
-  .featured-image .featured-image-inner {
-    overflow: hidden;
-    height: 1080px;
-    left: 0;
-    position: absolute; }
-    .featured-image .featured-image-inner img {
-      max-width: auto; }
+  margin-bottom: 2rem; }
+  .featured-image img {
+    max-width: 100%; }
 
 .featured-image-thumbnail {
   float: left; }

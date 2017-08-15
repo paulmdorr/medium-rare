@@ -22,7 +22,13 @@ a:hover {
 .main-column {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 1em 0;
+  padding: 0 1rem;
+}
+
+.inner-column {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 1rem;
 }
 
 .site-title a, .entry-title, .entry-title a, .widget-title {
@@ -33,23 +39,23 @@ a:hover {
 
 .site-header {
   box-shadow: 0 3px 2px -2px $shadow;
-  margin-bottom: 1em;
+  margin-bottom: 2rem;
   padding: 0.7em 0;
   width: 100%;
 
   .site-title a {
-    font-size: 1.7em;
+    font-size: 1.7rem;
   }
 
   .site-description {
     color: $not-quite-black;
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 }
 
 .main-navigation {
   .menu {
-    margin-top: 1em;
+    margin-top: 1rem;
 
     ul {
       list-style: none;
@@ -59,7 +65,7 @@ a:hover {
         float: left;
         padding-right: 20px;
         a {
-          font-size: 0.8em;
+          font-size: 0.8rem;
           font-weight: 500;
           text-transform: uppercase;
         }
@@ -70,27 +76,36 @@ a:hover {
 }
 
 article {
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
 
-  .entry-header.with-thumbnail {
-    clear: none;
-    float: left;
-    padding-left: 10px;
+  .entry-header {
+    margin-bottom: 1rem;
+
+    div.with-thumbnail {
+      clear: none;
+      float: left;
+      padding-left: 10px;
+    }
   }
 
-  .entry-meta, .entry-footer {
-    font-size: 0.7em;
-    margin-bottom: 1rem;
+  .entry-meta {
+    font-size: 0.7rem;
   }
 
   .entry-content {
     clear: both;
 
     p {
+      @extend .inner-column;
       font-family: $content-font;
-      font-size: 1.3em;
+      font-size: 1.3rem;
       margin-bottom: 2rem;
     }
+  }
+
+  .entry-footer {
+    @extend .inner-column;
+    font-size: 0.7rem;
   }
 }
 
@@ -103,7 +118,7 @@ article {
 
   a {
     font-family: $main-font;
-    font-size: 0.9em;
+    font-size: 1.2rem;
   }
 }
 
@@ -128,18 +143,10 @@ article {
 
 .featured-image {
   overflow: visible;
-  height: 1080px;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 
-  .featured-image-inner {
-    overflow: hidden;
-    height: 1080px;
-    left: 0;
-    position: absolute;
-
-    img {
-      max-width: auto;
-    }
+  img {
+    max-width: 100%;
   }
 }
 

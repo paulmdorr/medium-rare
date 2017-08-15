@@ -52,4 +52,4 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content main-column">
+	<div id="content" class="site-content">

@@ -39,8 +39,8 @@ get_header(); ?>
 				get_template_part('template-parts/content', get_post_format());
 
 			endwhile;
-
-			the_posts_navigation();
+			//TODO: commented for now, will most likely be replaced by "You might like" section
+			//the_posts_navigation();
 
 		else :
 
