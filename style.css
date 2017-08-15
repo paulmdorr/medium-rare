@@ -766,10 +766,8 @@ article {
 
 .featured-image-thumbnail {
   float: left; }
-  .featured-image-thumbnail .featured-image-thumbnail-inner {
-    overflow: hidden; }
-    .featured-image-thumbnail .featured-image-thumbnail-inner img {
-      border-radius: 50%;
-      width: 60px; }
+  .featured-image-thumbnail img {
+    border-radius: 50%;
+    width: 60px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -125,9 +125,7 @@ if (!function_exists('medium_rare_featured_image_thumbnail')) :
 	function medium_rare_featured_image_thumbnail() {
 		if (has_post_thumbnail() && !is_singular()) {
 			echo '<div class="featured-image-thumbnail">';
-				echo '<div class="featured-image-thumbnail-inner">';
-					the_post_thumbnail('thumbnail');
-				echo '</div>';
+				the_post_thumbnail('thumbnail');
 			echo '</div>';
 		}
 	}

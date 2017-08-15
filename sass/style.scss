@@ -131,12 +131,8 @@ article {
 
 .featured-image-thumbnail {
   float: left;
-  .featured-image-thumbnail-inner {
-    overflow: hidden;
-
     img {
       border-radius: 50%;
       width: 60px;
     }
-  }
 }
