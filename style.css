@@ -695,9 +695,9 @@ a:hover {
   max-width: 1000px;
   padding: 0 1rem; }
 
-.inner-column, article .entry-content p, article .entry-footer {
+.inner-column, article .entry-content p, article .entry-footer, .comments-area {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 700px;
   padding: 0 1rem; }
 
 .site-title a, .entry-title, .entry-title a, .widget-title {
@@ -763,7 +763,7 @@ article {
   .tags-links a[rel~="tag"], .cat-links a[rel~="tag"] {
     background-color: #efefef;
     border-radius: 2px;
-    color: #6f6f6f;
+    color: #6a6a6a;
     display: inline-block;
     padding: 4px 6px; }
   .tags-links a[rel~="tag"]:hover, .cat-links a[rel~="tag"]:hover {
@@ -780,5 +780,56 @@ article {
   .featured-image-thumbnail img {
     border-radius: 50%;
     width: 60px; }
+
+.comments-area {
+  max-width: 600px; }
+  .comments-area .comments-title {
+    color: #6a6a6a;
+    font-size: 1rem;
+    font-weight: 500; }
+  .comments-area ul {
+    list-style: none; }
+  .comments-area p {
+    margin: 0.8em 0; }
+  .comments-area p.comment-form-comment textarea, .comments-area p.comment-form-comment textarea:focus, .comments-area input {
+    border: none;
+    outline: none !important;
+    padding: 0;
+    resize: none; }
+  .comments-area p.comment-form-comment, .comments-area input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em; }
+  .comments-area input[type="submit"] {
+    color: #0098C9;
+    background-color: #ffffff;
+    border-color: #0098C9;
+    border-radius: 5px; }
+  .comments-area input[type="submit"]:hover {
+    background-color: #f5f5f5; }
+  .comments-area .comment-form-author {
+    float: left;
+    width: 48%; }
+    .comments-area .comment-form-author input {
+      width: 100%; }
+  .comments-area .comment-form-email {
+    float: right;
+    width: 48%; }
+    .comments-area .comment-form-email input {
+      width: 100%; }
+  .comments-area .comment-form-url {
+    clear: both; }
+    .comments-area .comment-form-url input {
+      width: 100%; }
+  .comments-area .name-email-wrapper:after {
+    clear: both;
+    height: 0;
+    width: 100%;
+    content: '';
+    display: block; }
+
+#write-response, label {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

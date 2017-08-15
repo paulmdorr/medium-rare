@@ -69,7 +69,7 @@ if (!function_exists('medium_rare_entry_footer')) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__('Leave a Comment<span class="screen-reader-text"> on %s</span>', 'medium-rare'),
+						__('Leave a response<span class="screen-reader-text"> for %s</span>', 'medium-rare'),
 						array(
 							'span' => array(
 								'class' => array(),

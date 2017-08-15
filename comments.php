@@ -20,26 +20,31 @@ if (post_password_required()) {
 }
 ?>
 
-<div id="comments" class="comments-area inner-column">
+<div id="comments" class="comments-area">
+	<h2 class="comments-title">
+		<?php
+			echo esc_html_e('Responses', 'medium-rare');
+		?>
+	</h2><!-- .comments-title -->
+
+	<?php 
+		comment_form(array(
+			/* translators: Response for posts (comments) */
+			'title_reply' => __('<p id="write-response">Write a response...</p>', 'medium-rare'),
+			'comment_notes_before' => '',
+			'comment_notes_after' => '',
+			'label_submit' => __('Publish', 'medium-rare')
+		));
+		the_comments_navigation();
+	?>
 	<?php
 	// You can start editing here -- including this comment!
 	if (have_comments()) : ?>
-		<h2 class="comments-title">
+		<ul class="comment-list">
 			<?php
-				echo esc_html_e('Responses', 'medium-rare');
+				wp_list_comments();
 			?>
-		</h2><!-- .comments-title -->
-
-		<?php the_comments_navigation(); ?>
-
-		<ol class="comment-list">
-			<?php
-				wp_list_comments(array(
-					'style'      => 'ol',
-					'short_ping' => true,
-				));
-			?>
-		</ol><!-- .comment-list -->
+		</ul><!-- .comment-list -->
 
 		<?php the_comments_navigation();
 
@@ -50,8 +55,6 @@ if (post_password_required()) {
 		endif;
 
 	endif; // Check for have_comments().
-
-	comment_form();
 	?>
 
 </div><!-- #comments -->
