@@ -69,12 +69,20 @@ a:hover {
 article {
   margin-bottom: 4em;
 
+  .entry-header.with-thumbnail {
+    clear: none;
+    float: left;
+    padding-left: 10px;
+  }
+
   .entry-meta, .entry-footer {
     font-size: 0.7em;
     margin-bottom: 1rem;
   }
 
   .entry-content {
+    clear: both;
+
     p {
       font-family: $content-font;
       font-size: 1.3em;
@@ -98,4 +106,37 @@ article {
 
 .tags-links, .cat-links {
   margin: 5px 0;
+}
+
+// Big featured image
+
+.featured-image {
+  overflow: visible;
+  height: 1080px;
+  margin-bottom: 2em;
+
+  .featured-image-inner {
+    overflow: hidden;
+    height: 1080px;
+    left: 0;
+    position: absolute;
+
+    img {
+      max-width: auto;
+    }
+  }
+}
+
+// Thumbnail featured image
+
+.featured-image-thumbnail {
+  float: left;
+  .featured-image-thumbnail-inner {
+    overflow: hidden;
+
+    img {
+      border-radius: 50%;
+      width: 60px;
+    }
+  }
 }

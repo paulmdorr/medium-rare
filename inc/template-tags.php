@@ -102,3 +102,44 @@ if (!function_exists('medium_rare_entry_footer')) :
 		);
 	}
 endif;
+
+if (!function_exists('medium_rare_featured_image')) :
+	/**
+	 * Prints a REALLY big featured image
+	 */
+	function medium_rare_featured_image() {
+		if (has_post_thumbnail()) {
+			echo '<div class="featured-image">';
+				echo '<div class="featured-image-inner">';
+					the_post_thumbnail('full');
+				echo '</div>';
+			echo '</div>';
+		}
+	}
+endif;
+
+if (!function_exists('medium_rare_featured_image_thumbnail')) :
+	/**
+	 * Prints the featured image as thumbnail
+	 */
+	function medium_rare_featured_image_thumbnail() {
+		if (has_post_thumbnail() && !is_singular()) {
+			echo '<div class="featured-image-thumbnail">';
+				echo '<div class="featured-image-thumbnail-inner">';
+					the_post_thumbnail('thumbnail');
+				echo '</div>';
+			echo '</div>';
+		}
+	}
+endif;
+
+if (!function_exists('medium_rare_thumbnail_class')) :
+	/**
+	 * Prints a REALLY big featured image
+	 */
+	function medium_rare_thumbnail_class() {
+		if (has_post_thumbnail() && !is_singular()) {
+			echo 'with-thumbnail';
+		}
+	}
+endif;
