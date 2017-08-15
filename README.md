@@ -20,3 +20,8 @@ Planned Features
 * Sharing integration matching the theme's style, possibly with a custom or third party plugin.
 * Better 404 page
 * Improved search results
+
+Notice about the CSS
+------
+
+This theme uses Sass to generate the CSS, but you can edit the `style.css` from the Wordpress theme editor anyway, since it's being pushed without compression. Although, if you're planning on making a lot of changes, maybe it's better to edit the Sass files (inside the `Sass` directory) and then generate the `style.css` file with compression (for production sites).
