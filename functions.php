@@ -155,3 +155,18 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+// Adding a class to the surrounding <p> in order to change its style
+function modify_read_more_link($text) {
+    return '<p class="more-link-p">
+			<a class="more-link" href="' . get_permalink() . '">' . $text . '</a>
+		<p>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
+// Removing scroll on "Read more" link
+function remove_more_link_scroll( $link ) {
+	$link = preg_replace( '|#more-[0-9]+|', '', $link );
+	return $link;
+}
+add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
