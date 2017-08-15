@@ -108,9 +108,7 @@ if (!function_exists('medium_rare_featured_image')) :
 	function medium_rare_featured_image() {
 		if (has_post_thumbnail()) {
 			echo '<div class="featured-image">';
-				echo '<div class="featured-image-inner">';
-					the_post_thumbnail('full');
-				echo '</div>';
+				the_post_thumbnail('full');
 			echo '</div>';
 		}
 	}
@@ -147,6 +145,8 @@ if (!function_exists('medium_rare_get_footer')) :
 	function medium_rare_get_footer() {
 		if (get_theme_mod('medium_rare_show_footer')) {
 			get_footer();
+		} else {
+			wp_footer();
 		}
 	}
 endif;
