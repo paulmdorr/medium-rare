@@ -750,7 +750,16 @@ article {
     font-size: 0.9em; }
 
 .tags-links, .cat-links {
+  color: #8f8f8f;
   margin: 5px 0; }
+  .tags-links a[rel~="tag"], .cat-links a[rel~="tag"] {
+    background-color: #efefef;
+    border-radius: 2px;
+    color: #6f6f6f;
+    display: inline-block;
+    padding: 4px 6px; }
+  .tags-links a[rel~="tag"]:hover, .cat-links a[rel~="tag"]:hover {
+    background-color: #e6e6e6; }
 
 .featured-image {
   overflow: visible;

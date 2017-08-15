@@ -3,9 +3,12 @@
 // Theme colors
 
 $shadow: rgba(0,0,0,0.1);
+$not-quite-faded-elements-color: #6f6f6f;
 $faded-elements-color: #8f8f8f;
 $unfaded-elements-color: #5c5c5c;
 $not-quite-black: #404040;
+$light-background: #efefef;
+$light-background-hover: #e6e6e6;
 
 a, a:visited {
   text-decoration: none;
@@ -105,7 +108,20 @@ article {
 }
 
 .tags-links, .cat-links {
+  color: $faded-elements-color;
   margin: 5px 0;
+
+  a[rel~="tag"] {
+    background-color: $light-background;
+    border-radius: 2px;
+    color: $not-quite-faded-elements-color;
+    display: inline-block;
+    padding: 4px 6px;
+  }
+
+  a[rel~="tag"]:hover {
+    background-color: $light-background-hover;
+  }
 }
 
 // Big featured image
