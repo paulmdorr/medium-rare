@@ -15,14 +15,14 @@
 
 	<footer id="colophon" class="site-footer main-column">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'medium-rare' ) ); ?>"><?php
+			<a href="<?php echo esc_url(__('https://wordpress.org/', 'medium-rare')); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'medium-rare' ), 'WordPress' );
+				printf(esc_html__('Proudly powered by %s', 'medium-rare'), 'WordPress');
 			?></a>
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'medium-rare' ), 'medium-rare', '<a href="http://paulmdorr.me/">Paul M Dorr</a>' );
+				printf(esc_html__('Theme: %1$s by %2$s.', 'medium-rare'), 'medium-rare', '<a href="http://paulmdorr.me/">Paul M Dorr</a>');
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
