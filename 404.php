@@ -57,4 +57,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_footer();
+medium_rare_get_footer();

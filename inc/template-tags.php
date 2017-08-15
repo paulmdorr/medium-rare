@@ -139,3 +139,14 @@ if (!function_exists('medium_rare_thumbnail_class')) :
 		}
 	}
 endif;
+
+if (!function_exists('medium_rare_get_footer')) :
+	/**
+	 * Prints the footer, if the setting to show it it's set to true
+	 */
+	function medium_rare_get_footer() {
+		if (get_theme_mod('medium_rare_show_footer')) {
+			get_footer();
+		}
+	}
+endif;

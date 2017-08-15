@@ -46,6 +46,20 @@ function medium_rare_customize_register($wp_customize) {
 		'label' => __('Show comments link'),
 		'description' => __('Shows or hides the comments link in posts list.')
 	));
+	// Show or hide "Leave a comment" link on the posts list
+  $wp_customize->add_setting('medium_rare_show_footer', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+		'default' => 0,
+		'transport' => 'refresh',
+	));
+	$wp_customize->add_control('medium_rare_show_footer', array(
+		'type' => 'checkbox',
+		'priority' => 10,
+		'section' => 'medium_rare',
+		'label' => __('Show footer'),
+		'description' => __('Shows or hides the footer.')
+	));
 }
 add_action('customize_register', 'medium_rare_customize_register');
 

@@ -35,4 +35,4 @@ get_header(); ?>
 
 <?php
 get_sidebar();
-get_footer();
+medium_rare_get_footer();
