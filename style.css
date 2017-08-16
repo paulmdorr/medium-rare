@@ -800,12 +800,15 @@ article {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    height: 58px;
     padding: 1rem; }
   .comments-area input[type="submit"] {
     color: #0098C9;
     background-color: #ffffff;
     border-color: #0098C9;
-    border-radius: 5px; }
+    border-radius: 5px;
+    height: 25px;
+    line-height: 0px; }
   .comments-area input[type="submit"]:hover {
     background-color: #f5f5f5; }
   .comments-area .comment-form-author {

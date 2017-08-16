@@ -192,6 +192,7 @@ article {
     border: 1px solid $shadow;
     border-radius: 3px;
     box-shadow: 0 1px 4px $shadow;
+    height: 58px;
     padding: 1rem;
   }
 
@@ -200,6 +201,8 @@ article {
     background-color: $main-button-background;
     border-color: $main-button-border;
     border-radius: 5px;
+    height: 25px;
+    line-height: 0px;
   }
 
   input[type="submit"]:hover {
