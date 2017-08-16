@@ -37,14 +37,14 @@ jQuery(document).ready(function($) {
 
   // Reposition submit button and logged in user element (if it exists)
   $('.comment-form-comment').append($('.form-submit input'))
-  $('#comment').before($('.logged-in-user'))
+  $('#comment').before($('.user-info'))
   $('.form-submit').remove()
   var originalCommentHeight = $('.comment-form-comment').css('height')
 
   // Change rows amount and show "Post Comment" button and user avatar depending on focus
   $('#comment').attr('rows', 1)
   $('#submit').hide()
-  $('.logged-in-user').hide()
+  $('.user-info').hide()
   // Show comment textarea
   $("#comment").focusin(function() {
     $('.comment-form-comment').css('height', 'auto')
@@ -52,7 +52,7 @@ jQuery(document).ready(function($) {
       rows: '+=5'
     }, 100, function() {
       $('#submit').show()
-      $('.logged-in-user').show()
+      $('.user-info').show()
     })
   })
   // Hide comment textarea
@@ -60,12 +60,32 @@ jQuery(document).ready(function($) {
     // The timeout avoids the Submit button click being prevented by the focusout event
     window.setTimeout(function() {
       $('#submit').hide()
-      $('.logged-in-user').hide()
+      $('.user-info').hide()
       $("#comment").animate({
         rows: '-=5'
       }, 100, function() {
         $('.comment-form-comment').css('height', originalCommentHeight)
       })
     }, 100)
+  })
+
+  // Restructure user info in comments
+  $.each($('.comment-author'), function(index, value) {
+    $(value).addClass('user-info')
+    if ($(value).find('b a').text() !== '') {
+      $(value).find('span').text($(value).find('b a').text())
+    } else {
+      $(value).find('span').text($(value).find('b').text())
+    }
+    $(value).find('b').remove()
+  })
+  $.each($('.comment-list article'), function(index, value) {
+    $(value).find('.reply').hide()
+    $(value).mouseover(function() {
+      $(value).find('.reply').show()
+    })
+    $(value).mouseleave(function() {
+      $(value).find('.reply').hide()
+    })
   })
 })

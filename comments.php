@@ -31,9 +31,9 @@ if (post_password_required()) {
 		$user = wp_get_current_user();
 		
 		if ($user) {
-			$image_url = esc_url(get_avatar_url($user->ID));
+			$image_url = esc_url(get_avatar_url($user->ID, array('size' => 32)));
 			$logged_in_element = "
-			<div class='logged-in-user'>
+			<div class='user-info'>
 				<img src='$image_url' class='avatar' />
 				<span>$user->display_name</span>
 			</div>";

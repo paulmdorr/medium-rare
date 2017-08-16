@@ -163,6 +163,12 @@ article {
     }
 }
 
+@mixin shaded-box {
+  border: 1px solid $shadow;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px $shadow;
+}
+
 .comments-area {
   @extend .inner-column;
   max-width: 600px;
@@ -178,7 +184,7 @@ article {
   }
 
   p {
-    margin: 0.8rem 0;
+    margin: 0.4rem 0;
   }
 
   p.comment-form-comment textarea, p.comment-form-comment textarea:focus, input {
@@ -189,9 +195,7 @@ article {
   }
 
   p.comment-form-comment, input {
-    border: 1px solid $shadow;
-    border-radius: 3px;
-    box-shadow: 0 1px 4px $shadow;
+    @include shaded-box;
     height: 58px;
     padding: 1rem;
   }
@@ -211,7 +215,7 @@ article {
 
   .comment-form-author {
     float: left;
-    width: 48%;
+    width: 49%;
 
     input {
       width: 100%;
@@ -219,12 +223,8 @@ article {
   }
 
   .comment-form-email {
+    @extend .comment-form-author;
     float: right;
-    width: 48%;
-
-    input {
-      width: 100%;
-    }
   }
 
   .comment-form-url {
@@ -235,7 +235,7 @@ article {
     }
   }
 
-  .name-email-wrapper:after, .logged-in-user:after {
+  .name-email-wrapper:after, .user-info:after, .comment-meta:after {
     clear: both;
     height: 0;
     width: 100%;
@@ -243,20 +243,65 @@ article {
     display: block;
   }
 
-  .logged-in-user {
+  .user-info {
     margin-bottom: 1rem;
 
     span {
       color: $main-button-border;
       float: left;
       font-size: 0.9rem;
-      height: 36px;
-      line-height: 36px;
+      height: 32px;
+      line-height: 32px;
       margin-left: 10px;
     }
 
     img {
       float: left;
+    }
+  }
+
+  .comment-respond {
+    margin-bottom: 2rem;
+  }
+
+  .comment-list {
+    .comment-meta {
+      margin-bottom: 1rem;
+    }
+
+    .user-info {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    .comment-metadata {
+      float: right;
+      font-size: 0.7rem;
+    }
+
+    .comment-content {
+      clear: both;
+    }
+
+    li.depth-1 {
+      @include shaded-box;
+      margin-bottom: 2rem;
+
+      article {
+        margin: 0;
+        padding: 1rem;
+      }
+
+      ul.children {
+        border-top: 1px solid $shadow;
+        margin: 0;
+      }
+    }
+
+    .reply {
+      float: right;
+      position: relative;
+      top: -15px;
     }
   }
 }
@@ -269,5 +314,5 @@ article {
 
 img.avatar {
   border-radius: 50%;
-  width: 36px;
+  width: 32px;
 }
