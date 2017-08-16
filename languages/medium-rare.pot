@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Medium Rare\n"
-"POT-Creation-Date: 2017-08-15 10:11-0300\n"
+"POT-Creation-Date: 2017-08-16 00:45-0300\n"
 "PO-Revision-Date: 2017-08-15 10:03-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,22 +41,20 @@ msgstr ""
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#. translators: 1: title.
-#: comments.php:34
-#, php-format
-msgid "One thought on &ldquo;%1$s&rdquo;"
+#: comments.php:26
+msgid "Responses"
 msgstr ""
 
-#. translators: 1: comment count number, 2: title.
-#: comments.php:40
-#, php-format
-msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+#. translators: Response for posts (comments)
+#: comments.php:46
+msgid "<p id=\"write-response\">Write a response...</p>"
+msgstr ""
 
-#: comments.php:63
+#: comments.php:49
+msgid "Publish"
+msgstr ""
+
+#: comments.php:67
 msgid "Comments are closed."
 msgstr ""
 
@@ -112,6 +110,14 @@ msgstr ""
 msgid "Shows or hides the comments link in posts list."
 msgstr ""
 
+#: inc/customizer.php:60
+msgid "Show footer"
+msgstr ""
+
+#: inc/customizer.php:61
+msgid "Shows or hides the footer."
+msgstr ""
+
 #. translators: %s: post date.
 #: inc/template-tags.php:29
 #, php-format
@@ -126,37 +132,35 @@ msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:52
-msgid ", "
+#: inc/template-tags.php:51
+msgid " "
 msgstr ""
 
 #. translators: 1: list of categories.
-#: inc/template-tags.php:55
+#: inc/template-tags.php:54
 #, php-format
-msgid "Posted in %1$s"
+msgid "Categories %1$s"
 msgstr ""
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:59
+#: inc/template-tags.php:57
 msgctxt "list item separator"
-msgid ", "
+msgid " "
 msgstr ""
 
 #. translators: 1: list of tags.
-#: inc/template-tags.php:62
+#: inc/template-tags.php:60
 #, php-format
 msgid "Tags %1$s"
 msgstr ""
 
 #. translators: %s: post title
-#: inc/template-tags.php:74
+#: inc/template-tags.php:72
 #, php-format
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgid "Leave a response<span class=\"screen-reader-text\"> for %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:91 template-parts/content-page.php:35
+#: inc/template-tags.php:89 template-parts/content-page.php:35
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
@@ -190,12 +194,12 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:22 template-parts/content.php:45
+#: template-parts/content-page.php:22 template-parts/content.php:51
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:34
+#: template-parts/content.php:40
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
