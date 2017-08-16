@@ -35,24 +35,34 @@ jQuery(document).ready(function($) {
   $('.comment-form-comment').after('<p class="name-email-wrapper"></p>')
   $('.name-email-wrapper').append($('.comment-form-author')).append($('.comment-form-email'))
 
-  // Reposition submit button
+  // Reposition submit button and logged in user element (if it exists)
   $('.comment-form-comment').append($('.form-submit input'))
+  $('#comment').before($('.logged-in-user'))
   $('.form-submit').remove()
 
-  // Change rows amount and show "Post Comment" button depending on focus
+  // Change rows amount and show "Post Comment" button and user avatar depending on focus
   $('#comment').attr('rows', 1)
   $('#submit').hide()
+  $('.logged-in-user').hide()
+  
+  $('#submit').click(function() {
+    console.log('test')
+  })
   $("#comment").focusin(function() {
     $("#comment").animate({
       rows: '+=5'
     }, 100, function() {
       $('#submit').show()
+      $('.logged-in-user').show()
     })
   })
   $("#comment").focusout(function() {
-    $('#submit').hide()
-    $("#comment").animate({
-      rows: '-=5'
+    window.setTimeout(function() {
+      $('#submit').hide()
+      $('.logged-in-user').hide()
+      $("#comment").animate({
+        rows: '-=5'
+      }, 100)
     }, 100)
   })
 })

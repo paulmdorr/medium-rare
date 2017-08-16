@@ -790,7 +790,7 @@ article {
   .comments-area ul {
     list-style: none; }
   .comments-area p {
-    margin: 0.8em 0; }
+    margin: 0.8rem 0; }
   .comments-area p.comment-form-comment textarea, .comments-area p.comment-form-comment textarea:focus, .comments-area input {
     border: none;
     outline: none !important;
@@ -800,7 +800,7 @@ article {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    padding: 1em; }
+    padding: 1rem; }
   .comments-area input[type="submit"] {
     color: #0098C9;
     background-color: #ffffff;
@@ -822,14 +822,29 @@ article {
     clear: both; }
     .comments-area .comment-form-url input {
       width: 100%; }
-  .comments-area .name-email-wrapper:after {
+  .comments-area .name-email-wrapper:after, .comments-area .logged-in-user:after {
     clear: both;
     height: 0;
     width: 100%;
     content: '';
     display: block; }
+  .comments-area .logged-in-user {
+    margin-bottom: 1rem; }
+    .comments-area .logged-in-user span {
+      color: #0098C9;
+      float: left;
+      font-size: 0.9rem;
+      height: 36px;
+      line-height: 36px;
+      margin-left: 10px; }
+    .comments-area .logged-in-user img {
+      float: left; }
 
 #write-response, label {
   display: none; }
+
+img.avatar {
+  border-radius: 50%;
+  width: 36px; }
 
 /*# sourceMappingURL=style.css.map */

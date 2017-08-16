@@ -178,7 +178,7 @@ article {
   }
 
   p {
-    margin: 0.8em 0;
+    margin: 0.8rem 0;
   }
 
   p.comment-form-comment textarea, p.comment-form-comment textarea:focus, input {
@@ -192,7 +192,7 @@ article {
     border: 1px solid $shadow;
     border-radius: 3px;
     box-shadow: 0 1px 4px $shadow;
-    padding: 1em;
+    padding: 1rem;
   }
 
   input[type="submit"] {
@@ -232,17 +232,39 @@ article {
     }
   }
 
-  .name-email-wrapper:after {
+  .name-email-wrapper:after, .logged-in-user:after {
     clear: both;
     height: 0;
     width: 100%;
     content: '';
     display: block;
-}
+  }
+
+  .logged-in-user {
+    margin-bottom: 1rem;
+
+    span {
+      color: $main-button-border;
+      float: left;
+      font-size: 0.9rem;
+      height: 36px;
+      line-height: 36px;
+      margin-left: 10px;
+    }
+
+    img {
+      float: left;
+    }
+  }
 }
 
 // Since the theme takes the placeholders from the wordpress comment form using
 // javascript, it's better to hide these so they don't show for just a second
 #write-response, label {
   display: none;
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 36px;
 }

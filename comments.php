@@ -27,13 +27,27 @@ if (post_password_required()) {
 		?>
 	</h2><!-- .comments-title -->
 
+	<?php
+		$user = wp_get_current_user();
+		
+		if ($user) {
+			$image_url = esc_url(get_avatar_url($user->ID));
+			$logged_in_element = "
+			<div class='logged-in-user'>
+				<img src='$image_url' class='avatar' />
+				<span>$user->display_name</span>
+			</div>";
+		}
+	?>
+
 	<?php 
 		comment_form(array(
 			/* translators: Response for posts (comments) */
 			'title_reply' => __('<p id="write-response">Write a response...</p>', 'medium-rare'),
 			'comment_notes_before' => '',
 			'comment_notes_after' => '',
-			'label_submit' => __('Publish', 'medium-rare')
+			'label_submit' => __('Publish', 'medium-rare'),
+			'logged_in_as' => $logged_in_element
 		));
 		the_comments_navigation();
 	?>
