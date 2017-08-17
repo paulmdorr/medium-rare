@@ -211,9 +211,23 @@ a:hover {
       a {
         text-decoration: underline;
       }
+
+      code {
+        background-color: $light-background;
+        display: block;
+        margin: 0 2rem;
+        padding: 1rem;
+      }
     }
 
     .entry-footer {
+
+      code {
+        background-color: $light-background;
+        display: block;
+        margin: 0 1em;
+        padding: 1em;
+      }
       @extend .inner-column;
       font-size: 0.7rem;
     }

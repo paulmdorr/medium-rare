@@ -279,8 +279,7 @@ kbd,
 tt,
 var {
   font-family: Inconsolata, Consolas, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem; }
+  font-size: 1.4rem; }
 
 abbr,
 acronym {
@@ -835,8 +834,18 @@ a:hover {
       font-style: italic; }
     .content-area article .entry-content a, .content-area article .entry-summary a {
       text-decoration: underline; }
+    .content-area article .entry-content code, .content-area article .entry-summary code {
+      background-color: #efefef;
+      display: block;
+      margin: 0 2rem;
+      padding: 1rem; }
   .content-area article .entry-footer {
     font-size: 0.7rem; }
+    .content-area article .entry-footer code {
+      background-color: #efefef;
+      display: block;
+      margin: 0 1em;
+      padding: 1em; }
 .content-area .no-results p, .content-area .not-found p {
   font-family: "Fjord One", sans-serif;
   font-size: 1.3rem;
