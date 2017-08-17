@@ -719,7 +719,7 @@ a:hover {
   max-width: 1000px;
   padding: 0 1rem; }
 
-.inner-column, .content-area header, .content-area article .featured-image-small, .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-summary p, .content-area article .entry-summary blockquote, .content-area article .entry-footer, .content-area .no-results p, .content-area .not-found p, .comments-area {
+.inner-column, .content-area header, .content-area article .featured-image-small, .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-summary p, .content-area article .entry-summary blockquote, .content-area article .entry-content .EnlighterJSWrapper, .content-area article .entry-summary .EnlighterJSWrapper, .content-area article .entry-footer, .content-area .no-results p, .content-area .not-found p, .comments-area {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 1rem; }

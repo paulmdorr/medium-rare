@@ -218,6 +218,10 @@ a:hover {
         margin: 0 2rem;
         padding: 1rem;
       }
+
+      .EnlighterJSWrapper {
+        @extend .inner-column;
+      }
     }
 
     .entry-footer {
