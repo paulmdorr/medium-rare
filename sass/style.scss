@@ -163,16 +163,33 @@ a:hover {
 
     .entry-header {
       margin-bottom: 1rem;
-
-      div.with-thumbnail {
-        clear: none;
-        float: left;
-        padding-left: 10px;
-      }
     }
 
     .entry-meta {
       font-size: 0.7rem;
+    }
+
+    .featured-image-small {
+      @extend .inner-column;
+      height: 200px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    // Big featured image
+    .featured-image {
+      overflow: visible;
+      margin-bottom: 2rem;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+      }
     }
 
     .entry-content, .entry-summary {
@@ -245,27 +262,6 @@ a:hover {
   a[rel~="tag"]:hover {
     background-color: $light-background-hover;
   }
-}
-
-// Big featured image
-
-.featured-image {
-  overflow: visible;
-  margin-bottom: 2rem;
-
-  img {
-    max-width: 100%;
-  }
-}
-
-// Thumbnail featured image
-
-.featured-image-thumbnail {
-  float: left;
-    img {
-      border-radius: 50%;
-      width: 60px;
-    }
 }
 
 @mixin shaded-box {

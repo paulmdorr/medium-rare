@@ -20,6 +20,8 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
+	<?php medium_rare_featured_image_small(); ?>
+	
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->

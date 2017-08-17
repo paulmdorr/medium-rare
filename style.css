@@ -720,7 +720,7 @@ a:hover {
   max-width: 1000px;
   padding: 0 1rem; }
 
-.inner-column, .content-area header, .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-summary p, .content-area article .entry-summary blockquote, .content-area article .entry-footer, .content-area .no-results p, .content-area .not-found p, .comments-area {
+.inner-column, .content-area header, .content-area article .featured-image-small, .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-summary p, .content-area article .entry-summary blockquote, .content-area article .entry-footer, .content-area .no-results p, .content-area .not-found p, .comments-area {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 1rem; }
@@ -808,12 +808,21 @@ a:hover {
   margin-bottom: 4rem; }
   .content-area article .entry-header {
     margin-bottom: 1rem; }
-    .content-area article .entry-header div.with-thumbnail {
-      clear: none;
-      float: left;
-      padding-left: 10px; }
   .content-area article .entry-meta {
     font-size: 0.7rem; }
+  .content-area article .featured-image-small {
+    height: 200px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-align: center; }
+    .content-area article .featured-image-small img {
+      margin: 0 auto; }
+  .content-area article .featured-image {
+    overflow: visible;
+    margin-bottom: 2rem;
+    text-align: center; }
+    .content-area article .featured-image img {
+      max-width: 100%; }
   .content-area article .entry-content, .content-area article .entry-summary {
     clear: both; }
     .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-summary p, .content-area article .entry-summary blockquote {
@@ -856,18 +865,6 @@ a:hover {
     padding: 4px 6px; }
   .tags-links a[rel~="tag"]:hover, .cat-links a[rel~="tag"]:hover {
     background-color: #e6e6e6; }
-
-.featured-image {
-  overflow: visible;
-  margin-bottom: 2rem; }
-  .featured-image img {
-    max-width: 100%; }
-
-.featured-image-thumbnail {
-  float: left; }
-  .featured-image-thumbnail img {
-    border-radius: 50%;
-    width: 60px; }
 
 .comments-area {
   max-width: 600px; }

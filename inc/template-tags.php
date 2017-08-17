@@ -106,7 +106,7 @@ if (!function_exists('medium_rare_featured_image')) :
 	 * Prints a REALLY big featured image
 	 */
 	function medium_rare_featured_image() {
-		if (has_post_thumbnail()) {
+		if (has_post_thumbnail() && is_singular()) {
 			echo '<div class="featured-image">';
 				the_post_thumbnail('full');
 			echo '</div>';
@@ -114,14 +114,14 @@ if (!function_exists('medium_rare_featured_image')) :
 	}
 endif;
 
-if (!function_exists('medium_rare_featured_image_thumbnail')) :
+if (!function_exists('medium_rare_featured_image_small')) :
 	/**
 	 * Prints the featured image as thumbnail
 	 */
-	function medium_rare_featured_image_thumbnail() {
+	function medium_rare_featured_image_small() {
 		if (has_post_thumbnail() && !is_singular()) {
-			echo '<div class="featured-image-thumbnail">';
-				the_post_thumbnail('thumbnail');
+			echo '<div class="featured-image-small">';
+				the_post_thumbnail(array(740));
 			echo '</div>';
 		}
 	}
