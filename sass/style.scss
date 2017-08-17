@@ -129,54 +129,90 @@ a:hover {
   }  
 }
 
-article.page {
+.content-area {
   header {
     @extend .inner-column;
     margin-bottom: 1rem;
-  }
-}
 
-article {
-  margin-bottom: 4rem;
+    .search-form {
+      margin-bottom: 4rem;
 
-  .entry-header {
-    margin-bottom: 1rem;
+      input[type="search"], input[type="search"]:focus {
+        border: none;
+        border-bottom: 1px solid $faded-elements;
+        border-radius: 0px;
+        color: $not-quite-faded-elements;
+        font-size: 3rem;
+        font-weight: 300;
+        outline: none !important;
+        width: 100%;
+      }
 
-    div.with-thumbnail {
-      clear: none;
-      float: left;
-      padding-left: 10px;
+      input[type="submit"] {
+        display: none;
+      }
     }
   }
 
-  .entry-meta {
-    font-size: 0.7rem;
+  header:after {
+    @include clear-floats;
   }
 
-  .entry-content {
-    clear: both;
+  article {
+    margin-bottom: 4rem;
 
-    p, blockquote {
+    .entry-header {
+      margin-bottom: 1rem;
+
+      div.with-thumbnail {
+        clear: none;
+        float: left;
+        padding-left: 10px;
+      }
+    }
+
+    .entry-meta {
+      font-size: 0.7rem;
+    }
+
+    .entry-content, .entry-summary {
+      clear: both;
+
+      p, blockquote {
+        @extend .inner-column;
+        font-family: $content-font;
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+      }
+
+      blockquote {
+        border-left: 2px solid $not-quite-faded-elements;
+        color: $not-quite-faded-elements;
+        font-style: italic;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .entry-footer {
+      @extend .inner-column;
+      font-size: 0.7rem;
+    }
+  }
+
+  .no-results, .not-found {
+    .page-header {
+      color: $not-quite-faded-elements;
+    }
+
+    p {
       @extend .inner-column;
       font-family: $content-font;
       font-size: 1.3rem;
       margin-bottom: 2rem;
     }
-
-    blockquote {
-      border-left: 2px solid $not-quite-faded-elements;
-      color: $not-quite-faded-elements;
-      font-style: italic;
-    }
-
-    a {
-      text-decoration: underline;
-    }
-  }
-
-  .entry-footer {
-    @extend .inner-column;
-    font-size: 0.7rem;
   }
 }
 

@@ -41,9 +41,11 @@
 				<?php
 				endif; ?>
 			</div><!-- .site-branding -->
+			<?php if (!is_search()): ?>
 			<div class="search-container">
 				<?php get_search_form(); ?>
 			</div>
+			<?php endif; ?>
 		</div>
 		<nav id="site-navigation" class="main-navigation main-column">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'medium-rare'); ?></button>

@@ -720,7 +720,7 @@ a:hover {
   max-width: 1000px;
   padding: 0 1rem; }
 
-.inner-column, article.page header, article .entry-content p, article .entry-content blockquote, article .entry-footer, .comments-area {
+.inner-column, .content-area header, .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-summary p, .content-area article .entry-summary blockquote, .content-area article .entry-footer, .content-area .no-results p, .content-area .not-found p, .comments-area {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 1rem; }
@@ -783,33 +783,57 @@ a:hover {
           font-weight: 500;
           text-transform: uppercase; }
 
-article.page header {
+.content-area header {
   margin-bottom: 1rem; }
-
-article {
+  .content-area header .search-form {
+    margin-bottom: 4rem; }
+    .content-area header .search-form input[type="search"], .content-area header .search-form input[type="search"]:focus {
+      border: none;
+      border-bottom: 1px solid #8f8f8f;
+      border-radius: 0px;
+      color: #6a6a6a;
+      font-size: 3rem;
+      font-weight: 300;
+      outline: none !important;
+      width: 100%; }
+    .content-area header .search-form input[type="submit"] {
+      display: none; }
+.content-area header:after {
+  clear: both;
+  height: 0;
+  width: 100%;
+  content: '';
+  display: block; }
+.content-area article {
   margin-bottom: 4rem; }
-  article .entry-header {
+  .content-area article .entry-header {
     margin-bottom: 1rem; }
-    article .entry-header div.with-thumbnail {
+    .content-area article .entry-header div.with-thumbnail {
       clear: none;
       float: left;
       padding-left: 10px; }
-  article .entry-meta {
+  .content-area article .entry-meta {
     font-size: 0.7rem; }
-  article .entry-content {
+  .content-area article .entry-content, .content-area article .entry-summary {
     clear: both; }
-    article .entry-content p, article .entry-content blockquote {
+    .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-summary p, .content-area article .entry-summary blockquote {
       font-family: "Fjord One", sans-serif;
       font-size: 1.3rem;
       margin-bottom: 2rem; }
-    article .entry-content blockquote {
+    .content-area article .entry-content blockquote, .content-area article .entry-summary blockquote {
       border-left: 2px solid #6a6a6a;
       color: #6a6a6a;
       font-style: italic; }
-    article .entry-content a {
+    .content-area article .entry-content a, .content-area article .entry-summary a {
       text-decoration: underline; }
-  article .entry-footer {
+  .content-area article .entry-footer {
     font-size: 0.7rem; }
+.content-area .no-results .page-header, .content-area .not-found .page-header {
+  color: #6a6a6a; }
+.content-area .no-results p, .content-area .not-found p {
+  font-family: "Fjord One", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
 
 .widget ul {
   list-style: none; }

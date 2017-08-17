@@ -35,11 +35,12 @@
 
 		<?php elseif (is_search()) : ?>
 
-			<p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'medium-rare'); ?></p>
-			<?php
-				get_search_form();
+			<header class="page-header">
+				<?php get_search_form(); ?>
+			</header><!-- .page-header -->
 
-		else : ?>
+			<p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'medium-rare'); ?></p>
+		<?php else : ?>
 
 			<p><?php esc_html_e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'medium-rare'); ?></p>
 			<?php
