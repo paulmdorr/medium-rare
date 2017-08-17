@@ -1,7 +1,7 @@
 Medium Rare Wordpress Theme
 ======
 
-Hey there! This is **_Medium Rare_**, a **_Wordpress_** theme based on [_s (underscores)](https://underscores.me/) and inspired on [Medium](https://medium.com/). It has a simple and minimalistic style, and it's intended to be an **_"About me"_** page with a blog and a portfolio.
+Hey there! This is **_Medium Rare_**, a **_Wordpress_** theme based on [_s (underscores)](https://underscores.me/) and inspired on [Medium](https://medium.com/). It has a simple and responsive style, and it's intended to be an **_"About me"_** page with a blog and a portfolio.
 
 It's free! So if you like it, you can use it on your site, or even help me with a pull request ;)
 

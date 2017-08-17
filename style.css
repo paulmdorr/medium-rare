@@ -258,7 +258,8 @@ i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  margin: 0;
+  padding: 0 1.5em; }
 
 address {
   margin: 0 0 1.5em; }
@@ -716,10 +717,10 @@ a:hover {
 
 .main-column {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   padding: 0 1rem; }
 
-.inner-column, .content-area header, .content-area article .featured-image-small, .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-summary p, .content-area article .entry-summary blockquote, .content-area article .entry-content .EnlighterJSWrapper, .content-area article .entry-summary .EnlighterJSWrapper, .content-area article .entry-footer, .content-area .no-results p, .content-area .not-found p, .comments-area {
+.inner-column, .content-area header, .content-area article .featured-image-small, .content-area article .entry-content, .content-area article .entry-summary, .content-area article .entry-footer, .content-area .no-results p, .content-area .not-found p, .comments-area {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 1rem; }
@@ -823,10 +824,15 @@ a:hover {
     .content-area article .featured-image img {
       max-width: 100%; }
   .content-area article .entry-content, .content-area article .entry-summary {
-    clear: both; }
-    .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-summary p, .content-area article .entry-summary blockquote {
-      font-family: "Fjord One", sans-serif;
-      font-size: 1.3rem;
+    clear: both;
+    font-family: "Fjord One", sans-serif;
+    font-size: 1.3rem; }
+    .content-area article .entry-content h1, .content-area article .entry-content h2, .content-area article .entry-content h3, .content-area article .entry-content h4, .content-area article .entry-content h5, .content-area article .entry-summary h1, .content-area article .entry-summary h2, .content-area article .entry-summary h3, .content-area article .entry-summary h4, .content-area article .entry-summary h5 {
+      margin-bottom: 1rem; }
+    .content-area article .entry-content ul, .content-area article .entry-summary ul {
+      margin: 0;
+      padding: 0 2rem; }
+    .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-content ul, .content-area article .entry-summary p, .content-area article .entry-summary blockquote, .content-area article .entry-summary ul {
       margin-bottom: 2rem; }
     .content-area article .entry-content blockquote, .content-area article .entry-summary blockquote {
       border-left: 2px solid #6a6a6a;
@@ -841,11 +847,6 @@ a:hover {
       padding: 1rem; }
   .content-area article .entry-footer {
     font-size: 0.7rem; }
-    .content-area article .entry-footer code {
-      background-color: #efefef;
-      display: block;
-      margin: 0 1em;
-      padding: 1em; }
 .content-area .no-results p, .content-area .not-found p {
   font-family: "Fjord One", sans-serif;
   font-size: 1.3rem;

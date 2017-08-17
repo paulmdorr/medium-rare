@@ -26,11 +26,16 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php medium_rare_featured_image_small(); ?>
+	<?php 
+		if (is_single()) {
+			medium_rare_featured_image();
+		} else {
+			medium_rare_featured_image_small();
+		}
+	?>
 
 	<div class="entry-content">
 		<?php
-			medium_rare_featured_image();
 			the_content(sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */

@@ -33,7 +33,7 @@ a:hover {
 
 .main-column {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   padding: 0 1rem;
 }
 
@@ -193,12 +193,21 @@ a:hover {
     }
 
     .entry-content, .entry-summary {
+      @extend .inner-column;
       clear: both;
+      font-family: $content-font;
+      font-size: 1.3rem;
 
-      p, blockquote {
-        @extend .inner-column;
-        font-family: $content-font;
-        font-size: 1.3rem;
+      h1, h2, h3, h4, h5 {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 2rem;
+      }
+
+      p, blockquote, ul {
         margin-bottom: 2rem;
       }
 
@@ -218,20 +227,9 @@ a:hover {
         margin: 0 2rem;
         padding: 1rem;
       }
-
-      .EnlighterJSWrapper {
-        @extend .inner-column;
-      }
     }
 
     .entry-footer {
-
-      code {
-        background-color: $light-background;
-        display: block;
-        margin: 0 1em;
-        padding: 1em;
-      }
       @extend .inner-column;
       font-size: 0.7rem;
     }
