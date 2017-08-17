@@ -32,10 +32,11 @@ function medium_rare_customize_register($wp_customize) {
 		'capability' => 'edit_theme_options',
 		'default' => 0,
 		'transport' => 'refresh',
+		'sanitize_callback' => 'boolean_sanitizer'
 	));
 	$wp_customize->add_section('medium_rare', array(
-		'title' => __('Medium Rare Settings'),
-		'description' => __('Change theme behaviour here'),
+		'title' => __('Medium Rare Settings', 'medium-rare'),
+		'description' => __('Change theme behaviour here', 'medium-rare'),
 		'priority' => 10,
 		'capability' => 'edit_theme_options',
 	));
@@ -43,8 +44,8 @@ function medium_rare_customize_register($wp_customize) {
 		'type' => 'checkbox',
 		'priority' => 10,
 		'section' => 'medium_rare',
-		'label' => __('Show comments link'),
-		'description' => __('Shows or hides the comments link in posts list.')
+		'label' => __('Show comments link', 'medium-rare'),
+		'description' => __('Shows or hides the comments link in posts list.', 'medium-rare')
 	));
 	// Show or hide "Leave a comment" link on the posts list
   $wp_customize->add_setting('medium_rare_show_footer', array(
@@ -52,16 +53,24 @@ function medium_rare_customize_register($wp_customize) {
 		'capability' => 'edit_theme_options',
 		'default' => 0,
 		'transport' => 'refresh',
+		'sanitize_callback' => 'boolean_sanitizer'
 	));
 	$wp_customize->add_control('medium_rare_show_footer', array(
 		'type' => 'checkbox',
 		'priority' => 10,
 		'section' => 'medium_rare',
-		'label' => __('Show footer'),
-		'description' => __('Shows or hides the footer.')
+		'label' => __('Show footer', 'medium-rare'),
+		'description' => __('Shows or hides the footer.', 'medium-rare')
 	));
 }
 add_action('customize_register', 'medium_rare_customize_register');
+
+function boolean_sanitizer($value) {
+	if (!in_array($value, array(true, false)))
+			$value = false;
+
+	return $value;
+}
 
 /**
  * Render the site title for the selective refresh partial.

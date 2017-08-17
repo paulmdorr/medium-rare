@@ -782,6 +782,13 @@ a:hover {
           font-size: 0.8rem;
           font-weight: 500;
           text-transform: uppercase; }
+        .site-header .main-navigation .menu ul li ul {
+          display: none;
+          float: right;
+          margin: 0;
+          position: absolute; }
+          .site-header .main-navigation .menu ul li ul li {
+            float: none; }
 
 .content-area header {
   margin-bottom: 1rem; }
@@ -829,9 +836,10 @@ a:hover {
     font-size: 1.3rem; }
     .content-area article .entry-content h1, .content-area article .entry-content h2, .content-area article .entry-content h3, .content-area article .entry-content h4, .content-area article .entry-content h5, .content-area article .entry-summary h1, .content-area article .entry-summary h2, .content-area article .entry-summary h3, .content-area article .entry-summary h4, .content-area article .entry-summary h5 {
       margin-bottom: 1rem; }
-    .content-area article .entry-content ul, .content-area article .entry-summary ul {
+    .content-area article .entry-content ul, .content-area article .entry-content ol, .content-area article .entry-summary ul, .content-area article .entry-summary ol {
       margin: 0;
-      padding: 0 2rem; }
+      margin-bottom: 1rem;
+      padding: 0 3rem; }
     .content-area article .entry-content p, .content-area article .entry-content blockquote, .content-area article .entry-content ul, .content-area article .entry-summary p, .content-area article .entry-summary blockquote, .content-area article .entry-summary ul {
       margin-bottom: 2rem; }
     .content-area article .entry-content blockquote, .content-area article .entry-summary blockquote {
@@ -842,9 +850,8 @@ a:hover {
       text-decoration: underline; }
     .content-area article .entry-content code, .content-area article .entry-summary code {
       background-color: #efefef;
-      display: block;
-      margin: 0 2rem;
-      padding: 1rem; }
+      display: inline-block;
+      padding: 0 10px 0 5px; }
   .content-area article .entry-footer {
     font-size: 0.7rem; }
 .content-area .no-results p, .content-area .not-found p {
