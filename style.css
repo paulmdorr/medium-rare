@@ -828,12 +828,13 @@ a:hover {
       text-decoration: underline; }
   .content-area article .entry-footer {
     font-size: 0.7rem; }
-.content-area .no-results .page-header, .content-area .not-found .page-header {
-  color: #6a6a6a; }
 .content-area .no-results p, .content-area .not-found p {
   font-family: "Fjord One", sans-serif;
   font-size: 1.3rem;
   margin-bottom: 2rem; }
+.content-area .page-header {
+  color: #6a6a6a;
+  margin-bottom: 3rem; }
 
 .widget ul {
   list-style: none; }

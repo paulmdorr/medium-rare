@@ -203,16 +203,17 @@ a:hover {
   }
 
   .no-results, .not-found {
-    .page-header {
-      color: $not-quite-faded-elements;
-    }
-
     p {
       @extend .inner-column;
       font-family: $content-font;
       font-size: 1.3rem;
       margin-bottom: 2rem;
     }
+  }
+
+  .page-header {
+    color: $not-quite-faded-elements;
+    margin-bottom: 3rem;
   }
 }
 
