@@ -128,6 +128,7 @@ function medium_rare_scripts() {
 	if (!is_search()) {
 		wp_enqueue_script('medium_rare_search', get_template_directory_uri() . '/js/search.js', array('jquery'));
 	}
+	wp_enqueue_script('medium_rare_submenus', get_template_directory_uri() . '/js/submenus.js', array('jquery'));
 }
 add_action('wp_enqueue_scripts', 'medium_rare_scripts');
 

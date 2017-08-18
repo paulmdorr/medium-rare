@@ -8,6 +8,7 @@ $not-quite-faded-elements: #6a6a6a;
 $faded-elements: #8f8f8f;
 $unfaded-elements: #5c5c5c;
 $not-quite-black: #404040;
+$lighter-background: #fbfbfb;
 $light-background: #efefef;
 $light-background-hover: #e6e6e6;
 $main-button-background: #ffffff;
@@ -117,6 +118,7 @@ a:hover {
         li {
           float: left;
           padding-right: 20px;
+          overflow: visible;
           
           a {
             font-size: 0.8rem;
@@ -125,9 +127,10 @@ a:hover {
           }
 
           ul {
+            background-color: $lighter-background;
             display: none;
-            float: right;
             margin: 0;
+            padding: 0 5px;
             position: absolute;
 
             li {
