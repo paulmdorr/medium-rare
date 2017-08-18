@@ -2,18 +2,19 @@
 @import 'icons';
 
 // Theme colors
-
-$shadow: rgba(0,0,0,0.1);
+// Signature colors
+$medium-rare-red: rgba(237, 94, 92, 1);
+$medium-rare-green: rgba(141, 193, 89, 1);
+$medium-rare-gainsboro: rgba(224, 223, 213, 1);
+$medium-rare-gainsboro-hover: rgb(237, 235, 219);
+$medium-rare-onyx: rgba(49, 54, 56, 1);
+// The rest of the colors
+$medium-rare-onyx-shadow: rgba(49, 54, 56, 0.3);
 $not-quite-faded-elements: #6a6a6a;
 $faded-elements: #8f8f8f;
 $unfaded-elements: #5c5c5c;
-$not-quite-black: #404040;
-$lighter-background: #fbfbfb;
-$light-background: #efefef;
-$light-background-hover: #e6e6e6;
-$main-button-background: #ffffff;
-$main-button-background-hover: #f5f5f5;
-$main-button-border: #0098C9;
+$medium-rare-platinum-hover: rgb(255, 255, 255);
+$medium-rare-platinum: rgb(249, 249, 247);
 
 @mixin clear-floats {  
   clear: both;
@@ -24,9 +25,9 @@ $main-button-border: #0098C9;
 }
 
 @mixin shaded-box {
-  border: 1px solid $shadow;
+  border: 1px solid $medium-rare-onyx-shadow;
   border-radius: 3px;
-  box-shadow: 0 1px 4px $shadow;
+  box-shadow: 0 1px 4px $medium-rare-onyx-shadow;
 }
 
 a, a:visited {
@@ -50,25 +51,30 @@ a:hover {
   padding: 0 1rem;
 }
 
-.site-title a, .entry-title, .entry-title a, .widget-title {
-  color: $not-quite-black;
+.entry-title, .entry-title a, .widget-title {
+  color: $medium-rare-onyx;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 .site-header {
-  box-shadow: 0 3px 2px -2px $shadow;
+  background-color: $medium-rare-onyx;
+  box-shadow: 0 3px 2px -2px $medium-rare-onyx-shadow;
   margin-bottom: 2rem;
   padding: 0.7em 0;
   width: 100%;
 
   .site-title a {
+    text-shadow: 0px 1px 4px #212527;
+    color: $medium-rare-red;
     font-size: 1.7rem;
+    font-weight: 600;
   }
 
   .site-description {
-    color: $not-quite-black;
-    font-size: 0.8rem;
+    color: $medium-rare-green;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
   .site-branding {
@@ -83,9 +89,11 @@ a:hover {
     }
 
     input[type="search"], input[type="search"]:focus {
+      background-color: transparent;
       border: none;
       border-bottom: 1px solid $faded-elements;
       border-radius: 0px;
+      color: $faded-elements;
       outline: none !important;
     }
 
@@ -133,7 +141,7 @@ a:hover {
           }
 
           ul {
-            background-color: $lighter-background;
+            background-color: $medium-rare-platinum;
             display: none;
             margin: 0;
             padding: 0 5px;
@@ -244,7 +252,7 @@ a:hover {
       }
 
       code {
-        background-color: $light-background;
+        background-color: $medium-rare-gainsboro;
         display: inline-block;
         padding: 0 10px 0 5px;
       }
@@ -289,7 +297,7 @@ a:hover {
   margin: 5px 0;
 
   a[rel~="tag"] {
-    background-color: $light-background;
+    background-color: $medium-rare-gainsboro;
     border-radius: 2px;
     color: $not-quite-faded-elements;
     display: inline-block;
@@ -297,7 +305,7 @@ a:hover {
   }
 
   a[rel~="tag"]:hover {
-    background-color: $light-background-hover;
+    background-color: $medium-rare-gainsboro-hover;
   }
 }
 
@@ -333,16 +341,16 @@ a:hover {
   }
 
   input[type="submit"] {
-    color: $main-button-border;
-    background-color: $main-button-background;
-    border-color: $main-button-border;
+    color: $medium-rare-green;
+    background-color: $medium-rare-platinum;
+    border-color: $medium-rare-green;
     border-radius: 5px;
     height: 25px;
     line-height: 0px;
   }
 
   input[type="submit"]:hover {
-    background-color: $main-button-background-hover;
+    background-color: $medium-rare-platinum-hover;
   }
 
   .comment-form-author {
@@ -375,7 +383,7 @@ a:hover {
     margin-bottom: 1rem;
 
     span {
-      color: $main-button-border;
+      color: $medium-rare-green;
       float: left;
       font-size: 0.9rem;
       height: 32px;
@@ -421,7 +429,7 @@ a:hover {
       }
 
       ul.children {
-        border-top: 1px solid $shadow;
+        border-top: 1px solid $medium-rare-onyx-shadow;
         margin: 0;
       }
     }
@@ -446,8 +454,9 @@ img.avatar {
 }
 
 table {
+  @include shaded-box;
   th, td {
-    @include shaded-box;
+    border: 1px solid $medium-rare-onyx-shadow;
     padding: 10px;
   }
 }

@@ -725,21 +725,26 @@ a:hover {
   max-width: 740px;
   padding: 0 1rem; }
 
-.site-title a, .entry-title, .entry-title a, .widget-title {
-  color: #404040;
+.entry-title, .entry-title a, .widget-title {
+  color: #313638;
   font-size: 1.5rem;
   font-weight: 600; }
 
 .site-header {
-  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.1);
+  background-color: #313638;
+  box-shadow: 0 3px 2px -2px rgba(49, 54, 56, 0.3);
   margin-bottom: 2rem;
   padding: 0.7em 0;
   width: 100%; }
   .site-header .site-title a {
-    font-size: 1.7rem; }
+    text-shadow: 0px 1px 4px #212527;
+    color: #ed5e5c;
+    font-size: 1.7rem;
+    font-weight: 600; }
   .site-header .site-description {
-    color: #404040;
-    font-size: 0.8rem; }
+    color: #8dc159;
+    font-size: 0.9rem;
+    font-weight: 500; }
   .site-header .site-branding {
     float: left; }
   .site-header .search-container {
@@ -747,9 +752,11 @@ a:hover {
     .site-header .search-container input[type="submit"] {
       display: none; }
     .site-header .search-container input[type="search"], .site-header .search-container input[type="search"]:focus {
+      background-color: transparent;
       border: none;
       border-bottom: 1px solid #8f8f8f;
       border-radius: 0px;
+      color: #8f8f8f;
       outline: none !important; }
     .site-header .search-container label {
       display: inline-block;
@@ -784,7 +791,7 @@ a:hover {
           font-weight: 500;
           text-transform: uppercase; }
         .site-header .main-navigation .menu ul li ul {
-          background-color: #fbfbfb;
+          background-color: #f9f9f7;
           display: none;
           margin: 0;
           padding: 0 5px;
@@ -851,7 +858,7 @@ a:hover {
     .content-area article .entry-content a, .content-area article .entry-summary a {
       text-decoration: underline; }
     .content-area article .entry-content code, .content-area article .entry-summary code {
-      background-color: #efefef;
+      background-color: #e0dfd5;
       display: inline-block;
       padding: 0 10px 0 5px; }
   .content-area article .entry-footer {
@@ -877,13 +884,13 @@ a:hover {
   color: #8f8f8f;
   margin: 5px 0; }
   .tags-links a[rel~="tag"], .cat-links a[rel~="tag"] {
-    background-color: #efefef;
+    background-color: #e0dfd5;
     border-radius: 2px;
     color: #6a6a6a;
     display: inline-block;
     padding: 4px 6px; }
   .tags-links a[rel~="tag"]:hover, .cat-links a[rel~="tag"]:hover {
-    background-color: #e6e6e6; }
+    background-color: #edebdb; }
 
 .comments-area {
   max-width: 600px; }
@@ -901,20 +908,20 @@ a:hover {
     padding: 0;
     resize: none; }
   .comments-area p.comment-form-comment, .comments-area input {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(49, 54, 56, 0.3);
     border-radius: 3px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px rgba(49, 54, 56, 0.3);
     height: 58px;
     padding: 1rem; }
   .comments-area input[type="submit"] {
-    color: #0098C9;
-    background-color: #ffffff;
-    border-color: #0098C9;
+    color: #8dc159;
+    background-color: #f9f9f7;
+    border-color: #8dc159;
     border-radius: 5px;
     height: 25px;
     line-height: 0px; }
   .comments-area input[type="submit"]:hover {
-    background-color: #f5f5f5; }
+    background-color: white; }
   .comments-area .comment-form-author, .comments-area .comment-form-email {
     float: left;
     width: 49%; }
@@ -935,7 +942,7 @@ a:hover {
   .comments-area .user-info {
     margin-bottom: 1rem; }
     .comments-area .user-info span {
-      color: #0098C9;
+      color: #8dc159;
       float: left;
       font-size: 0.9rem;
       height: 32px;
@@ -956,15 +963,15 @@ a:hover {
   .comments-area .comment-list .comment-content {
     clear: both; }
   .comments-area .comment-list li.depth-1 {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(49, 54, 56, 0.3);
     border-radius: 3px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px rgba(49, 54, 56, 0.3);
     margin-bottom: 2rem; }
     .comments-area .comment-list li.depth-1 article {
       margin: 0;
       padding: 1rem; }
     .comments-area .comment-list li.depth-1 ul.children {
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(49, 54, 56, 0.3);
       margin: 0; }
   .comments-area .comment-list .reply {
     float: right;
@@ -978,10 +985,12 @@ img.avatar {
   border-radius: 50%;
   width: 32px; }
 
-table th, table td {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+table {
+  border: 1px solid rgba(49, 54, 56, 0.3);
   border-radius: 3px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px; }
+  box-shadow: 0 1px 4px rgba(49, 54, 56, 0.3); }
+  table th, table td {
+    border: 1px solid rgba(49, 54, 56, 0.3);
+    padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
