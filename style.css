@@ -944,7 +944,7 @@ a:hover {
     .comments-area .user-info img {
       float: left; }
   .comments-area .comment-respond {
-    margin-bottom: 2rem; }
+    margin: 0 2rem 2rem; }
   .comments-area .comment-list .comment-meta {
     margin-bottom: 1rem; }
   .comments-area .comment-list .user-info {
@@ -977,5 +977,11 @@ a:hover {
 img.avatar {
   border-radius: 50%;
   width: 32px; }
+
+table th, table td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */

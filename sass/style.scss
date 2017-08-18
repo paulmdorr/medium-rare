@@ -23,6 +23,12 @@ $main-button-border: #0098C9;
   display: block;
 }
 
+@mixin shaded-box {
+  border: 1px solid $shadow;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px $shadow;
+}
+
 a, a:visited {
   text-decoration: none;
   color: $faded-elements;
@@ -295,12 +301,6 @@ a:hover {
   }
 }
 
-@mixin shaded-box {
-  border: 1px solid $shadow;
-  border-radius: 3px;
-  box-shadow: 0 1px 4px $shadow;
-}
-
 .comments-area {
   @extend .inner-column;
   max-width: 600px;
@@ -389,7 +389,7 @@ a:hover {
   }
 
   .comment-respond {
-    margin-bottom: 2rem;
+    margin: 0 2rem 2rem;
   }
 
   .comment-list {
@@ -443,4 +443,11 @@ a:hover {
 img.avatar {
   border-radius: 50%;
   width: 32px;
+}
+
+table {
+  th, td {
+    @include shaded-box;
+    padding: 10px;
+  }
 }
