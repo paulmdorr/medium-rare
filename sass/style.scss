@@ -9,7 +9,8 @@ $medium-rare-gainsboro: rgba(224, 223, 213, 1);
 $medium-rare-gainsboro-hover: rgb(237, 235, 219);
 $medium-rare-onyx: rgba(49, 54, 56, 1);
 // The rest of the colors
-$medium-rare-onyx-shadow: rgb(68, 76, 79);
+$medium-rare-onyx-shadow: rgba(49, 54, 56, 0.5);
+$medium-rare-onyx-lighter: rgb(60, 69, 73);
 $not-quite-faded-elements: #6a6a6a;
 $faded-elements: #8f8f8f;
 $unfaded-elements: #5c5c5c;
@@ -198,7 +199,7 @@ a:hover {
             }
 
             ul {
-              background-color: $medium-rare-onyx-shadow;
+              background-color: $medium-rare-onyx-lighter;
               display: none;
               margin: 0;
               padding: 5px;

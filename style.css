@@ -3,7 +3,7 @@ Theme Name: Medium Rare
 Theme URI: http://paulmdorr.me/medium-rare
 Author: Paul M Dorr
 Author URI: http://paulmdorr.me/
-Description: A simple, minimalistic theme inspired by Medium
+Description: Simple and responsive theme inspired by Medium
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -736,7 +736,7 @@ a:hover {
 
 .site-header {
   background-color: #313638;
-  box-shadow: 0 3px 2px -2px #444c4f;
+  box-shadow: 0 3px 2px -2px rgba(49, 54, 56, 0.5);
   margin-bottom: 2rem;
   padding: 0.7em 0;
   width: 100%;
@@ -832,7 +832,7 @@ a:hover {
             display: block;
             padding: 5px 20px; }
           .site-header .main-navigation .menu ul li ul {
-            background-color: #444c4f;
+            background-color: #3c4549;
             display: none;
             margin: 0;
             padding: 5px;
@@ -949,9 +949,9 @@ a:hover {
     padding: 0;
     resize: none; }
   .comments-area p.comment-form-comment, .comments-area input {
-    border: 1px solid #444c4f;
+    border: 1px solid rgba(49, 54, 56, 0.5);
     border-radius: 3px;
-    box-shadow: 0 1px 4px #444c4f;
+    box-shadow: 0 1px 4px rgba(49, 54, 56, 0.5);
     height: 58px;
     padding: 1rem; }
   .comments-area input[type="submit"] {
@@ -1004,15 +1004,15 @@ a:hover {
   .comments-area .comment-list .comment-content {
     clear: both; }
   .comments-area .comment-list li.depth-1 {
-    border: 1px solid #444c4f;
+    border: 1px solid rgba(49, 54, 56, 0.5);
     border-radius: 3px;
-    box-shadow: 0 1px 4px #444c4f;
+    box-shadow: 0 1px 4px rgba(49, 54, 56, 0.5);
     margin-bottom: 2rem; }
     .comments-area .comment-list li.depth-1 article {
       margin: 0;
       padding: 1rem 2rem; }
     .comments-area .comment-list li.depth-1 ul.children {
-      border-top: 1px solid #444c4f;
+      border-top: 1px solid rgba(49, 54, 56, 0.5);
       margin: 0; }
   .comments-area .comment-list .reply {
     float: right;
@@ -1033,11 +1033,11 @@ img.avatar {
   width: 32px; }
 
 table {
-  border: 1px solid #444c4f;
+  border: 1px solid rgba(49, 54, 56, 0.5);
   border-radius: 3px;
-  box-shadow: 0 1px 4px #444c4f; }
+  box-shadow: 0 1px 4px rgba(49, 54, 56, 0.5); }
   table th, table td {
-    border: 1px solid #444c4f;
+    border: 1px solid rgba(49, 54, 56, 0.5);
     padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
