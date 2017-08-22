@@ -1,4 +1,6 @@
-![Medium Rare Logo](https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/Medium%20Rare.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/Medium%20Rare.png" alt="Logo" />
+</p>
 
 Hey there! This is **_Medium Rare_**, a **_Wordpress_** theme based on [_s (underscores)](https://underscores.me/) and inspired on [Medium](https://medium.com/). It has a simple and responsive style, and it's intended to be an **_"About me"_** page with a blog and a portfolio.
 
@@ -12,16 +14,24 @@ Current Features
 * Style inspired by [Medium](https://medium.com/) but oriented to single user blog and "About me" page.
 * Comments section and form similar to Medium's.
 
-![Comments](https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/screenshots/comments.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/screenshots/comments.png" alt="Comments" />
+</p>
 
 * Support for featured images, small in the posts list and as wide as the page while viewing a single post.
 
-![Featured Image](https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/screenshots/featured%20image.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/screenshots/featured%20image.png" alt="Featured image" />
+</p>
 
 * One level of submenus on desktop and mobile
 
-![Submenu](https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/screenshots/submenu1.png)
-![Submenu Mobile](https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/screenshots/submenu2.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/screenshots/submenu1.png" alt="Submenus " />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/screenshots/submenu2.png" alt="Submenus mobile" />
+</p>
 
 Planned Features
 ------
