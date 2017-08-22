@@ -59,7 +59,8 @@ $code-font: Inconsolata, Consolas, monospace;
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: 100% $main-font;
+	font-family: $main-font;
+	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }

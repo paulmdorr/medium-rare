@@ -50,7 +50,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-  font-family: 100% Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
+  font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -708,6 +709,9 @@ object {
 .icon-heart:before {
   content: "\e9da"; }
 
+.icon-menu:before {
+  content: "\e9bd"; }
+
 a, a:visited {
   text-decoration: none;
   color: #8f8f8f; }
@@ -732,10 +736,11 @@ a:hover {
 
 .site-header {
   background-color: #313638;
-  box-shadow: 0 3px 2px -2px rgba(49, 54, 56, 0.3);
+  box-shadow: 0 3px 2px -2px #444c4f;
   margin-bottom: 2rem;
   padding: 0.7em 0;
-  width: 100%; }
+  width: 100%;
+  /* Smartphones (portrait and landscape) ----------- */ }
   .site-header .site-title a {
     text-shadow: 0px 1px 4px #212527;
     color: #ed5e5c;
@@ -787,17 +792,53 @@ a:hover {
         padding-right: 20px;
         overflow: visible; }
         .site-header .main-navigation .menu ul li a {
+          color: #e0dfd5;
           font-size: 0.8rem;
           font-weight: 500;
           text-transform: uppercase; }
+        .site-header .main-navigation .menu ul li a:hover {
+          color: #edebdb; }
         .site-header .main-navigation .menu ul li ul {
-          background-color: #f9f9f7;
+          background-color: #313638;
           display: none;
           margin: 0;
-          padding: 0 5px;
+          padding: 5px;
           position: absolute; }
           .site-header .main-navigation .menu ul li ul li {
             float: none; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .site-header .main-navigation {
+      padding: 0; }
+      .site-header .main-navigation .menu-toggle {
+        background-color: transparent;
+        border: none;
+        color: #8f8f8f;
+        font-size: 1em;
+        position: absolute;
+        top: 138px;
+        outline: none; }
+      .site-header .main-navigation .menu-toggle:hover {
+        color: #5c5c5c; }
+      .site-header .main-navigation .menu {
+        clear: both;
+        display: none;
+        margin-top: 0.5em; }
+        .site-header .main-navigation .menu ul li {
+          display: block;
+          float: none;
+          padding: 0;
+          width: 100%; }
+          .site-header .main-navigation .menu ul li a {
+            display: block;
+            padding: 5px 20px; }
+          .site-header .main-navigation .menu ul li ul {
+            background-color: #444c4f;
+            display: none;
+            margin: 0;
+            padding: 5px;
+            position: static; }
+            .site-header .main-navigation .menu ul li ul li {
+              float: none; } }
 
 .content-area header {
   margin-bottom: 1rem; }
@@ -827,7 +868,7 @@ a:hover {
   .content-area article .entry-meta {
     font-size: 0.7rem; }
   .content-area article .featured-image-small {
-    height: 200px;
+    max-height: 200px;
     margin-bottom: 1rem;
     overflow: hidden;
     text-align: center; }
@@ -908,9 +949,9 @@ a:hover {
     padding: 0;
     resize: none; }
   .comments-area p.comment-form-comment, .comments-area input {
-    border: 1px solid rgba(49, 54, 56, 0.3);
+    border: 1px solid #444c4f;
     border-radius: 3px;
-    box-shadow: 0 1px 4px rgba(49, 54, 56, 0.3);
+    box-shadow: 0 1px 4px #444c4f;
     height: 58px;
     padding: 1rem; }
   .comments-area input[type="submit"] {
@@ -921,7 +962,7 @@ a:hover {
     height: 25px;
     line-height: 0px; }
   .comments-area input[type="submit"]:hover {
-    background-color: white; }
+    background-color: #d0d0d0; }
   .comments-area .comment-form-author, .comments-area .comment-form-email {
     float: left;
     width: 49%; }
@@ -951,10 +992,10 @@ a:hover {
     .comments-area .user-info img {
       float: left; }
   .comments-area .comment-respond {
-    margin: 0 2rem 2rem; }
+    margin-bottom: 2rem; }
   .comments-area .comment-list .comment-meta {
     margin-bottom: 1rem; }
-  .comments-area .comment-list .user-info {
+  .comments-area .comment-list .vcard.user-info {
     float: left;
     margin-bottom: 0; }
   .comments-area .comment-list .comment-metadata {
@@ -963,20 +1004,26 @@ a:hover {
   .comments-area .comment-list .comment-content {
     clear: both; }
   .comments-area .comment-list li.depth-1 {
-    border: 1px solid rgba(49, 54, 56, 0.3);
+    border: 1px solid #444c4f;
     border-radius: 3px;
-    box-shadow: 0 1px 4px rgba(49, 54, 56, 0.3);
+    box-shadow: 0 1px 4px #444c4f;
     margin-bottom: 2rem; }
     .comments-area .comment-list li.depth-1 article {
       margin: 0;
-      padding: 1rem; }
+      padding: 1rem 2rem; }
     .comments-area .comment-list li.depth-1 ul.children {
-      border-top: 1px solid rgba(49, 54, 56, 0.3);
+      border-top: 1px solid #444c4f;
       margin: 0; }
   .comments-area .comment-list .reply {
     float: right;
     position: relative;
     top: -15px; }
+    .comments-area .comment-list .reply .comment-reply-link {
+      color: #8dc159; }
+  .comments-area .comment-list .comment-respond {
+    margin: 0 2rem 2rem; }
+    .comments-area .comment-list .comment-respond .comment-reply-title a {
+      color: #ed5e5c; }
 
 #write-response, #commentForm label {
   display: none; }
@@ -986,11 +1033,11 @@ img.avatar {
   width: 32px; }
 
 table {
-  border: 1px solid rgba(49, 54, 56, 0.3);
+  border: 1px solid #444c4f;
   border-radius: 3px;
-  box-shadow: 0 1px 4px rgba(49, 54, 56, 0.3); }
+  box-shadow: 0 1px 4px #444c4f; }
   table th, table td {
-    border: 1px solid rgba(49, 54, 56, 0.3);
+    border: 1px solid #444c4f;
     padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
