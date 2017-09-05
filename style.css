@@ -942,6 +942,7 @@ a:hover {
     border-radius: 2px;
     color: #6a6a6a;
     display: inline-block;
+    margin: 3px 1px;
     padding: 4px 6px; }
   .tags-links a[rel~="tag"]:hover, .cat-links a[rel~="tag"]:hover {
     background-color: #edebdb; }
