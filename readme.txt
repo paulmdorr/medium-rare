@@ -1,19 +1,19 @@
 === Medium Rare ===
 
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Contributors: Paul M Dorr
+Tags: featured-images, threaded-comments, translation-ready, medium, clean, responsive
 
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0.0
+Stable tag: 0.1.3 beta
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Medium Rare.
+Simple and responsive theme inspired by Medium.
 
 == Description ==
 
-Description
+For a longer description, check [this post in my blog](https://www.paulmdorr.me/2017/08/30/wip-wordpress-theme-inspired-by-medium-style/)
 
 == Installation ==
 
@@ -21,15 +21,13 @@ Description
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Frequently Asked Questions ==
-
 = Does this theme support any plugins? =
 
 Medium Rare includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 0.1.3 beta - Sep 5 2017 =
 * Initial release
 
 == Credits ==
