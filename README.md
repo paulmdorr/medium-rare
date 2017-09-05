@@ -34,6 +34,8 @@ Current Features
 </p>
 
 * Nice and simple search results page
+* Simple and nice 404 page with search form
+* Text wrapping around post images
 
 Planned Features
 ------
@@ -41,8 +43,6 @@ Planned Features
 * Suggestions on each post, related to it ("You might also like" section).
 * Portfolio integration matching the theme's style, possibly with a custom or third party plugin.
 * Sharing integration matching the theme's style, possibly with a custom or third party plugin.
-* Better 404 page
-* Text wrapping around post images
 
 Notice about the CSS
 ------
