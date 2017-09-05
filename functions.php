@@ -124,10 +124,14 @@ function medium_rare_scripts() {
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 		wp_enqueue_script('medium_rare_comments', get_template_directory_uri() . '/js/comments.js', array('jquery'));
+	} else if (!is_singular()) {
+		wp_enqueue_script('medium_rare_posts_nav', get_template_directory_uri() . '/js/posts-nav.js', array('jquery'));
 	}
+	
 	if (!is_search()) {
 		wp_enqueue_script('medium_rare_search', get_template_directory_uri() . '/js/search.js', array('jquery'));
 	}
+	
 	wp_enqueue_script('medium_rare_submenus', get_template_directory_uri() . '/js/submenus.js', array('jquery'));
 }
 add_action('wp_enqueue_scripts', 'medium_rare_scripts');

@@ -33,6 +33,8 @@ Current Features
   <img src="https://raw.githubusercontent.com/paulmdorr/medium-rare/master/images/screenshots/submenu2.png" alt="Submenus mobile" />
 </p>
 
+* Nice and simple search results page
+
 Planned Features
 ------
 
@@ -40,7 +42,6 @@ Planned Features
 * Portfolio integration matching the theme's style, possibly with a custom or third party plugin.
 * Sharing integration matching the theme's style, possibly with a custom or third party plugin.
 * Better 404 page
-* Improved search results
 * Text wrapping around post images
 
 Notice about the CSS

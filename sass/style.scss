@@ -14,7 +14,7 @@ $medium-rare-onyx-lighter: rgb(60, 69, 73);
 $not-quite-faded-elements: #6a6a6a;
 $faded-elements: #8f8f8f;
 $unfaded-elements: #5c5c5c;
-$medium-rare-platinum-hover: rgb(208, 208, 208);
+$medium-rare-platinum-hover:rgb(229, 240, 215);
 $medium-rare-platinum: rgb(249, 249, 247);
 
 @mixin clear-floats {  
@@ -29,6 +29,15 @@ $medium-rare-platinum: rgb(249, 249, 247);
   border: 1px solid $medium-rare-onyx-shadow;
   border-radius: 3px;
   box-shadow: 0 1px 4px $medium-rare-onyx-shadow;
+}
+
+@mixin basic-button {
+  color: $medium-rare-green;
+  background-color: $medium-rare-platinum;
+  border: 1px solid $medium-rare-green;
+  border-radius: 5px;
+  height: 25px;
+  line-height: 0px;
 }
 
 a, a:visited {
@@ -290,7 +299,7 @@ a:hover {
         margin-bottom: 1rem;
       }
 
-      ul, ol {
+      ul {
         margin: 0;
         margin-bottom: 1rem;
         padding: 0 3rem;
@@ -314,6 +323,16 @@ a:hover {
         background-color: $medium-rare-gainsboro;
         display: inline-block;
         padding: 0 10px 0 5px;
+      }
+
+      .more-link-p {
+        text-align: center;
+      
+        a {
+          font-family: $main-font;
+          font-size: 1.2rem;
+          text-decoration: none;
+        }
       }
     }
 
@@ -340,15 +359,6 @@ a:hover {
 
 .widget ul {
   list-style: none;
-}
-
-.more-link-p {
-  text-align: center;
-
-  a {
-    font-family: $main-font;
-    font-size: 1.2rem;
-  }
 }
 
 .tags-links, .cat-links {
@@ -400,12 +410,7 @@ a:hover {
   }
 
   input[type="submit"] {
-    color: $medium-rare-green;
-    background-color: $medium-rare-platinum;
-    border-color: $medium-rare-green;
-    border-radius: 5px;
-    height: 25px;
-    line-height: 0px;
+    @include basic-button()
   }
 
   input[type="submit"]:hover {
@@ -517,6 +522,29 @@ a:hover {
 // javascript, it's better to hide these so they don't show for just a second
 #write-response, #commentForm label {
   display: none;
+}
+
+.posts-navigation {
+  @extend .inner-column;
+  padding-bottom: 2em;
+
+  a {
+    @include basic-button();
+    padding: 8px 10px;
+
+    span {
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  a:hover {
+    background-color: $medium-rare-platinum-hover;
+  }
+}
+
+.posts-navigation:after {
+  @include clear-floats();
 }
 
 img.avatar {
