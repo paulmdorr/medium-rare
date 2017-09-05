@@ -41,7 +41,7 @@
 				<?php
 				endif; ?>
 			</div><!-- .site-branding -->
-			<?php if (!is_search()): ?>
+			<?php if (!is_search() && !is_404()): ?>
 			<div class="search-container">
 				<?php get_search_form(); ?>
 			</div>

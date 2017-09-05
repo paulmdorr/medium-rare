@@ -355,7 +355,7 @@ a:hover {
     color: $not-quite-faded-elements;
     margin-bottom: 3rem;
   }
-}
+} //.content-area
 
 .widget ul {
   list-style: none;
@@ -557,5 +557,23 @@ table {
   th, td {
     border: 1px solid $medium-rare-onyx-shadow;
     padding: 10px;
+  }
+}
+
+.error-404 {
+  header {
+    font-family: $content-font;
+
+    h1 {
+      color: $medium-rare-onyx;
+      font-size: 10rem;
+      text-align: center;
+    }
+    
+    h2 {
+      color: $not-quite-faded-elements;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
   }
 }

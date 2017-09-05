@@ -1063,4 +1063,15 @@ table {
     border: 1px solid rgba(49, 54, 56, 0.5);
     padding: 10px; }
 
+.error-404 header {
+  font-family: "Fjord One", sans-serif; }
+  .error-404 header h1 {
+    color: #313638;
+    font-size: 10rem;
+    text-align: center; }
+  .error-404 header h2 {
+    color: #6a6a6a;
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+
 /*# sourceMappingURL=style.css.map */

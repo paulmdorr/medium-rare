@@ -4,7 +4,7 @@
  */
 ?>
 <form role="search" method="get" id="search-form" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
-  <?php if (!is_search()): ?>
+  <?php if (!is_search() && !is_404()): ?>
     <p class="icon-search"></p>
 	<?php endif; ?>
   <label for="search">
